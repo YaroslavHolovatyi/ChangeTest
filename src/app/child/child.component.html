@@ -1,0 +1,16 @@
+<hr>
+<p>Child Component (OnPush Strategy)</p>
+
+<p>Primitive Data: {{ pData }}</p>
+<p>Non-Primitive Data: {{ nPData.name }}</p>
+
+<hr>
+
+<p>Initial Child Data: {{ initialCD }}</p>
+<button (click)="updateChildData()">Update Child Data</button>
+
+<hr>
+
+<div class="log">
+    <button (click)="logMessage()">Log from Child</button>
+</div>

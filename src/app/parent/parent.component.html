@@ -1,0 +1,21 @@
+<h2>Parent Component</h2>
+<hr>
+<h3>Default startegy</h3>
+
+<p>This is primitive data: {{pData}}</p>
+<button (click)="changePD()">Change Primitive</button>
+
+<hr>
+<p>Not Primitive Data</p>
+<p>This is non-primitive data: {{nPData.name}}</p>
+<button (click)="changeNPD()">Change Data without changing ref</button>
+<button (click)="changeNPDR()">Change Data Ref</button>
+
+<div class="log">
+    <button (click)="logMessage()">Log from Parent</button>
+</div>
+
+<app-child 
+[pData]="pData"
+[nPData]="nPData"
+></app-child>
